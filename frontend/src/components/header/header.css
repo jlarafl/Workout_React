@@ -1,0 +1,9 @@
+.header__container {
+    height: 90vh;
+    max-width: 100%;
+    background-image: url(../../assets/images/header.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header__container-image {}
