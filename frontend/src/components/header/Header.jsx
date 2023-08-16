@@ -7,8 +7,8 @@ const Header = () => {
         <div className="header__container">
             <div className="header__container-overlay">
                 <div className="header__container-overlay-text">
-                    <h1>Header TExt</h1>
-                    <h3>Describe text</h3>
+                    <h1>Keep Track of Your Workout</h1>
+                    <h3>Or discover new ones.</h3>
                 </div>
             </div>
         </div>
