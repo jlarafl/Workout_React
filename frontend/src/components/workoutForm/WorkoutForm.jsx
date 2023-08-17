@@ -43,7 +43,7 @@ const WorkoutForm = () => {
     }
 
     return (
-        <div>
+        <div style={{ maxWidth: '100%' }}>
             <form className="create" onSubmit={handleSubmit}>
                 <h3>Add a New Workout</h3>
 
