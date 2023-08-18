@@ -1,10 +1,26 @@
 .navbar__container {
     display: flex;
+    position: fixed;
+    width: 100%;
+    top: 3px;
+    top: 2.4em;
+    align-items: center;
+    padding: 0rem 1.5rem;
+    transition: 0.5s ease;
+    background: transparent;
+}
+
+.navbar__container-scroll {
+    background: #a3b18a;
+    display: flex;
     position: sticky;
+    width: 100%;
+    top: 0;
     top: 0;
     align-items: center;
     padding: 0rem 1.5rem;
-    background: #dad7cd;
+    transition: 1s ease;
+    background: #a3b18a;
 }
 
 .navbar__container-links {
@@ -13,7 +29,7 @@
     justify-content: space-between;
     align-items: center;
     font-size: 20px;
-    color: black;
+    color: #fff;
     font-family: var(--font-family);
 }
 

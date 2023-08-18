@@ -1,10 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './navbar.css'
 import dumbbell from '../../assets/images/dumbbell.png'
 
 const Navbar = () => {
+    const [scroll, setScroll] = useState(false);
+
+    const changeNavbar = (e) => {
+        if (window.scrollY >= 100) {
+            setScroll(true)
+        }
+        else {
+            setScroll(false)
+        }
+
+    }
+    window.addEventListener('scroll', changeNavbar)
+
     return (
-        <div className="navbar__container">
+        <div className={scroll ? "navbar__container-scroll" : "navbar__container"}>
             <div className="navbar__container-links">
                 <div className="navbar__container-links-logo">
                     <a href="#home"><img src={dumbbell} alt="dumbbell logo" /></a>
@@ -15,7 +28,7 @@ const Navbar = () => {
                 <ul className="navbar__container-links_container">
                     <a href="#home"><li>Home</li></a>
                     <a href="#workout"><li>Workouts</li></a>
-                    <a href="#about"><li>About</li></a>
+                    <a href="#getstarted"><li>Get Started</li></a>
                 </ul>
             </div>
         </div>

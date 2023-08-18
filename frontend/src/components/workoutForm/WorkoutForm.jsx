@@ -47,13 +47,13 @@ const WorkoutForm = () => {
             <form className="create" onSubmit={handleSubmit}>
                 <h3>Add a New Workout</h3>
 
-                <label>Excersize Title</label>
+                <label>exercise Title</label>
                 <input type="text" value={title || ''} onChange={(e) => setTitle(e.target.value)} className={emptyFields.includes('title') ? 'error' : ''} />
 
-                <label>Excersize Load</label>
+                <label>exercise Load</label>
                 <input type="number" value={load || ''} onChange={(e) => setLoad(e.target.value)} className={emptyFields.includes('load') ? 'error' : ''} />
 
-                <label>Excersize Reps</label>
+                <label>exercise Reps</label>
                 <input type="number" value={reps || ''} onChange={(e) => setReps(e.target.value)} className={emptyFields.includes('reps') ? 'error' : ''} />
 
                 <button type="submit">Add Workout</button>

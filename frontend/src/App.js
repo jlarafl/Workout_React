@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Home } from './pages/index'
 import { Navbar} from './components'
-import { Header, Excercizes } from './containers/imports'
+import { Header, Exercise, GetStarted } from './containers/imports'
 import './App.css'
 
 function App() {
@@ -12,7 +12,8 @@ function App() {
       <Header />
       <div>
       <div>
-        <Excercizes />
+        <Exercise />
+        <GetStarted />
       </div>
       <Routes>
         <Route path="/" element={<Home />} />
