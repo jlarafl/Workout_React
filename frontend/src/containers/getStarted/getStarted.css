@@ -1,11 +1,73 @@
 .getStarted__container {
-    background: #344e41;
+    width: 100%;
+    height: 100vh;
+}
+
+.getStarted__container-image {
     display: flex;
     flex-direction: column;
-    max-width: 100%;
-    padding: 2rem 2rem;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    height: 100%;
+    width: 100%;
+    background: url('../../assets/images/getstarted.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.getStarted__container-image img {
+    height: 100%;
+    max-width: 100%;
+
+}
+
+.getStarted__container-text {
+    color: #fff;
+    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+    font-size: 45px;
     font-family: var(--font-family);
+    text-align: center;
+}
+
+.getStarted__button {
+    background-color: #ffffff;
+    border: 1px solid #222222;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #222222;
+    cursor: pointer;
+    display: inline-block;
+    font-family: var(--font-family);
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    padding: 16px 43px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    touch-action: manipulation;
+    transition: box-shadow .2s, -ms-transform .1s, -webkit-transform .1s, transform .1s;
+    user-select: none;
+    -webkit-user-select: none;
+    width: auto;
+}
+
+.getStarted__button:focus-visible {
+    box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+    transition: box-shadow .2s;
+}
+
+.getStarted__button:active {
+    background-color: #ededed;
+    border-color: #000000;
+    transform: scale(.86);
+}
+
+.getStarted__button:disabled {
+    border-color: #DDDDDD;
+    color: #DDDDDD;
+    cursor: not-allowed;
+    opacity: 1;
 }

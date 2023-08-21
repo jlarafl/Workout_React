@@ -1,10 +1,13 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { useRef} from 'react'
 import { Home } from './pages/index'
 import { Navbar} from './components'
 import { Header, Exercise, GetStarted } from './containers/imports'
 import './App.css'
 
 function App() {
+
+  const exerciseRef = useRef(null)
   return (
     <div>
     <BrowserRouter>
@@ -12,12 +15,12 @@ function App() {
       <Header />
       <div>
       <div>
-        <Exercise />
+        <Exercise exerciseRef={exerciseRef} />
         <GetStarted />
       </div>
-      <Routes>
+     {/*<Routes>
         <Route path="/" element={<Home />} />
-      </Routes>
+      </Routes>*/}
       </div>
     </BrowserRouter>
     </div>

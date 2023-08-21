@@ -6,7 +6,7 @@
     top: 2.4em;
     align-items: center;
     padding: 0rem 1.5rem;
-    transition: 0.5s ease;
+    transition: 1s ease;
     background: transparent;
 }
 
@@ -56,20 +56,16 @@
 
 }
 
-
-.navbar__container-links_container li {
-    display: flex;
-    flex-direction: row;
-    text-decoration: none;
-    margin: 0rem 2rem;
-}
-
 .navbar__container-links_container a {
     cursor: pointer;
     color: inherit;
     text-decoration: underline;
     text-decoration-color: transparent;
     transition: ease 0.2s;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    margin: 0rem 2rem;
 
 }
 

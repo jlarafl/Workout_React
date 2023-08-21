@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
+import { Link } from 'react-scroll'
 import './navbar.css'
 import dumbbell from '../../assets/images/dumbbell.png'
 
 const Navbar = () => {
+
+
     const [scroll, setScroll] = useState(false);
 
     const changeNavbar = (e) => {
@@ -26,9 +29,9 @@ const Navbar = () => {
                     <h1>My Workout</h1>
                 </div>
                 <ul className="navbar__container-links_container">
-                    <a href="#home"><li>Home</li></a>
-                    <a href="#workout"><li>Workouts</li></a>
-                    <a href="#getstarted"><li>Get Started</li></a>
+                    <Link to="home" spy={true} smooth={true} offset={50} duration={100}>Home</Link>
+                    <Link to="exercise" spy={true} smooth={true} offset={50} duration={100}>Workouts</Link>
+                    <Link to="getStarted" spy={true} smooth={true} offset={50} duration={100}>Get Started</Link>
                 </ul>
             </div>
         </div>

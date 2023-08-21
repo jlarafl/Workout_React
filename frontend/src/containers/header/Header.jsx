@@ -3,7 +3,7 @@ import './header.css'
 
 const Header = () => {
     return (
-        <div className="header__container">
+        <div id="home" name="home" className="header__container">
             <div className="header__container-overlay">
                 <div className="header__container-overlay-text">
                     <h1>Keep Track of Your Workout</h1>

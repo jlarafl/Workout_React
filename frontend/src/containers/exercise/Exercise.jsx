@@ -7,7 +7,7 @@ import exercise4 from '../../assets/images/exercise4.gif'
 
 const Exercise = () => {
     return (
-        <div className="exercise__container">
+        <div id="exercise" name="exercise" className="exercise__container">
             <div className="exercise__images-grid">
                 <img src={exercise1} alt="exercise" />
                 <img src={exercise2} alt="exercise" />
