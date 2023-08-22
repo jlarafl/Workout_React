@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { useRef} from 'react'
 import { Home } from './pages/index'
-import { Navbar} from './components'
+import { Navbar } from './components'
 import { Header, Exercise, GetStarted } from './containers/imports'
 import './App.css'
 

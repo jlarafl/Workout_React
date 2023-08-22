@@ -62,7 +62,7 @@
 .getStarted__button:active {
     background-color: #ededed;
     border-color: #000000;
-    transform: scale(.86);
+    transform: scale(.96);
 }
 
 .getStarted__button:disabled {
@@ -70,4 +70,52 @@
     color: #DDDDDD;
     cursor: not-allowed;
     opacity: 1;
+}
+
+.popup-content {
+    margin: auto;
+    font-family: var(--font-family);
+    font-size: 20px;
+    margin: 30px 0px 10px;
+    padding: 5px;
+    border: 1px solid #d7d7d7;
+    height: auto;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.modal {
+    width: 400px;
+    background: white;
+    position: fixed;
+    z-index: 3;
+    border-radius: 6px;
+    text-align: center;
+    padding: 0 30px 30px;
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.33);
+    transition-delay: 2s;
+}
+
+
+.close-modal {
+    border: 0;
+    color: black;
+    outline: none;
+    font-family: var(--font-family);
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup-overlay {
+    background: rgba(0, 0, 0, .5)
+}
+
+[data-popup=tooltip].popup-overlay {
+    background: transparent
 }
