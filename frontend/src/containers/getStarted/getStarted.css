@@ -90,7 +90,9 @@
 
 .modal {
     width: 400px;
+    height: auto;
     background: white;
+    color: #344e41;
     position: fixed;
     z-index: 3;
     border-radius: 6px;
@@ -100,16 +102,37 @@
     transition-delay: 2s;
 }
 
+.button__create {
+    background: #588157;
+    width: 150px;
+    height: 55px;
+    margin: 0.5rem 0;
+}
 
-.close-modal {
-    border: 0;
-    color: black;
-    outline: none;
+.button__text {
     font-family: var(--font-family);
     font-size: 18px;
-    border-radius: 4px;
+}
+
+
+.close-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
     cursor: pointer;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    white-space: nowrap
+}
+
+.topright {
+    position: absolute;
+    right: 0;
+    top: 0
 }
 
 .popup-overlay {

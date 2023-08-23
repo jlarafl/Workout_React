@@ -15,12 +15,30 @@ const GetStarted = () => {
                             close => (
                                 <div className='modal'>
                                     <div className='content'>
+                                        <div id="login">
+                                            <h1>Create Account</h1>
+                                            <form id="login_form">
+                                                <div className="field_container">
+                                                    <input type="text" placeholder="Username" required />
+                                                </div>
 
+                                                <div className="field_container">
+                                                    <input type="Password" placeholder="Password" required />
+                                                    <button id="sign_in_button" className="button__create">
+                                                        <span className="button__text">Create Account</span>
+                                                    </button>
+                                                    <p>Already have an account? <a href="#">Log In</a></p>
+                                                </div>
+
+
+                                            </form>
+
+                                        </div>
                                     </div>
                                     <div>
-                                        <button className="close-modal" onClick=
+                                        <button className="close-button topright" onClick=
                                             {() => close()}>
-                                            Close modal
+                                            <h2>X</h2>
                                         </button>
                                     </div>
                                 </div>
